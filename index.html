@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe Ejecutivo - Visita CAT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        @media print {
+            body { background-color: white; }
+            .shadow-lg { box-shadow: none !important; border: 1px solid #e5e7eb; }
+            .print-break { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        
+        <!-- ENCABEZADO -->
+        <header class="bg-white rounded-t-xl shadow-lg border-t-8 border-blue-800 p-8 mb-6">
+            <div class="flex justify-between items-start sm:items-center mb-6 flex-col sm:flex-row gap-4 sm:gap-0">
+                <h1 class="text-3xl font-bold text-gray-800 tracking-tight">INFORME EJECUTIVO DE VISITA</h1>
+                
+                <!-- Botón de Descargar PDF (Oculto al imprimir) -->
+                <button onclick="window.print()" class="print:hidden bg-blue-50 hover:bg-blue-100 text-blue-700 font-semibold py-2 px-4 border border-blue-200 rounded-lg shadow-sm flex items-center transition-colors duration-200">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    Descargar PDF
+                </button>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 bg-gray-50 p-6 rounded-lg border border-gray-100">
+                <div>
+                    <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Fecha</p>
+                    <p class="text-lg text-gray-800">19 de Marzo de 2026</p>
+                </div>
+                <div>
+                    <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider">De</p>
+                    <p class="text-lg text-gray-800 font-medium">Misael Gutiérrez</p>
+                </div>
+                <div>
+                    <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Asunto</p>
+                    <p class="text-lg text-gray-800">Visita al centro de atención telefonica.</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- 1. RESUMEN EJECUTIVO -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-6 print-break">
+            <h2 class="text-xl font-bold text-blue-800 border-b-2 border-gray-100 pb-2 mb-4 flex items-center">
+                <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                1. RESUMEN EJECUTIVO
+            </h2>
+            <p class="text-gray-700 leading-relaxed">
+                Este Informe detalla las observaciones obtenidas durante la reciente visita al CAT, verificando el uso de herramientas, operatividad, calidad y las dinámicas realizadas por nuestra área.
+            </p>
+        </section>
+
+        <!-- 2. HERRAMIENTAS Y APOYO VISUAL -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-6 print-break">
+            <h2 class="text-xl font-bold text-blue-800 border-b-2 border-gray-100 pb-2 mb-4 flex items-center">
+                <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                2. HERRAMIENTAS Y APOYO VISUAL
+            </h2>
+            
+            <div class="mb-6">
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Proyección de la imagen Monitor Consar:</h3>
+                <p class="text-gray-700 mb-3">Se validó que el equipo de CAT cumple con la tarea programada de proyectar el Monitor Consar diariamente en ambas pantallas de los pasillos durante la operación.</p>
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg">
+                    <p class="font-semibold text-blue-800 mb-1 flex items-center">
+                        <span class="mr-2">🎯</span> ACCIÓN A MI CARGO:
+                    </p>
+                    <p class="text-blue-900 text-sm">Diseñar e impartir una sesión de refuerzo sobre todos los puntos del Monitor Consar. Estará enfocada en los equipos de la campaña de servicio al cliente y 800, para dotarlos de herramientas y argumentos que impulsen la retención de nuestros clientes.</p>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Uso del MicroSitio en la operación diaria:</h3>
+                <p class="text-gray-700">Se confirma su utilización activa tanto en campañas <em>inbound</em> como <em>outbound</em>. Aunque visualmente los ejecutivos lo mantienen minimizado para priorizar el CRM en su pantalla principal, el Micrositio está siempre a su disposición y es consultado puntualmente cuando requieren la herramienta.</p>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Uso del Monitor de Avisos:</h3>
+                <p class="text-gray-700 mb-3">Se detectó de manera negativa que el uso del monitor de avisos no está dentro de esta programación.</p>
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg">
+                    <p class="font-semibold text-blue-800 mb-1 flex items-center">
+                        <span class="mr-2">🎯</span> ACCIÓN A MI CARGO:
+                    </p>
+                    <p class="text-blue-900 text-sm">Reportar con <strong>Diana Espinoza</strong> la gestión para que se incluya.</p>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Herramientas en Vista Rápida (Nota Adicional):</h3>
+                <p class="text-gray-700 mb-3">A nivel general, hay una confirmación positiva en el uso de todas las herramientas de vista rápida.</p>
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg">
+                    <p class="font-semibold text-blue-800 mb-1 flex items-center">
+                        <span class="mr-2">🎯</span> ACCIÓN A MI CARGO:
+                    </p>
+                    <p class="text-blue-900 text-sm">Platicar contigo este punto para darte contexto con cada una de las herramientas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. OPERATIVIDAD Y MÉTRICAS -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-6 print-break">
+            <h2 class="text-xl font-bold text-blue-800 border-b-2 border-gray-100 pb-2 mb-4 flex items-center">
+                <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                3. OPERATIVIDAD Y MÉTRICAS
+            </h2>
+
+            <div class="mb-6">
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Nivel de Ocupación de los Ejecutivos:</h3>
+                <p class="text-gray-700">A nivel de percepción y observación en piso. Se atiende un promedio de 17 a 20 llamadas en cuanto al turno matutino (Es el que le dí seguimiento), con un Tiempo Medio de Operación (TMO) de 8 minutos, lo cual se alinea perfectamente con los estudios y proyecciones previas realizadas.</p>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Envío de Encuestas de Satisfacción:</h3>
+                <p class="text-gray-700">Los datos nos confirman que las encuestas se están enviando de manera constante y se ofrecen desde el inicio de la llamada. Durante la visita, se realizó el seguimiento directo a una ejecutiva, confirmando el envío exitoso de la encuesta en 15 de 16 llamadas atendidas.</p>
+            </div>
+
+            <div>
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Seguimiento a Indicadores y Pantallas:</h3>
+                <p class="text-gray-700 mb-3">Se confirma que sí se comparten y se da un seguimiento activo a los indicadores correspondientes al "Rally". Sin embargo, adicional a los indicadores del rally, el ejecutivo cuenta con una pantalla general de indicadores diarios pero presenta un desfase y la información se limita únicamente al día en curso, lo que reduce su utilidad analítica para el ejecutivo e inconformidades al cerrar con un dato y después de su salida el número presente un defase.</p>
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg">
+                    <p class="font-semibold text-blue-800 mb-1 flex items-center">
+                        <span class="mr-2">🎯</span> ACCIÓN A MI CARGO:
+                    </p>
+                    <p class="text-blue-900 text-sm">Levantar el requerimiento y dar seguimiento directo con <strong>Diana Espinoza</strong> para corregir el desfase de los datos. El objetivo es que la herramienta permita a los ejecutivos filtrar y visualizar su desempeño por semanas, días o fechas específicas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. CALIDAD, ACTITUD Y MOTIVACIÓN -->
+        <section class="bg-white rounded-xl shadow-lg p-8 print-break">
+            <h2 class="text-xl font-bold text-blue-800 border-b-2 border-gray-100 pb-2 mb-4 flex items-center">
+                <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.514"></path></svg>
+                4. CALIDAD, ACTITUD Y MOTIVACIÓN
+            </h2>
+
+            <div class="mb-6">
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Oportunidades en Amabilidad y Formas de Comunicación:</h3>
+                <p class="text-gray-700 mb-3">Si bien es complicado y realizar una auditoría de calidad eficiente únicamente transitando por el pasillo, es evidente que existen áreas de oportunidad en las formas y el tono en el que se transmite la información al cliente.</p>
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg">
+                    <p class="font-semibold text-blue-800 mb-1 flex items-center">
+                        <span class="mr-2">🎯</span> ACCIÓN A MI CARGO:
+                    </p>
+                    <p class="text-blue-900 text-sm">Realizar un análisis a los audios detractores mediante sesiones de escucha de llamadas. Y contar con un entregable sobre esto para el día <strong>24 de Abril</strong>.</p>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Impacto del Curso de Amabilidad:</h3>
+                <p class="text-gray-700">Como se revisó en la rendición de cuentas, el curso tuvo una buena recepción. Desde la perspectiva de los ejecutivos, el contenido "hizo clic", logrando concientizar sobre la importancia del tono de voz, el lenguaje corporal (que impacta la actitud al teléfono), la correcta elección de palabras y la proactividad para ir más allá de la necesidad inicial del cliente.</p>
+            </div>
+
+            <div>
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Percepción del "Rally":</h3>
+                <p class="text-gray-700 mb-3">La dinámica es vista con muy buenos ojos y resulta ser un fuerte motivador. Los ejecutivos revisan la pantalla de avances diariamente. Se destaca que, dependiendo de la meta, los premios de "tiempo/días" generan mayor tracción que los souvenirs físicos.</p>
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg">
+                    <p class="font-semibold text-blue-800 mb-1 flex items-center">
+                        <span class="mr-2">🎯</span> ACCIÓN A MI CARGO:
+                    </p>
+                    <p class="text-blue-900 text-sm">Estructurar y llevar los próximos indicadores del Rally directamente al <em>Site</em>, convirtiéndolo en uno de los puntos visuales de información y seguimiento más atractivos para la operación diaria.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
